@@ -48,6 +48,13 @@ gem 'uglifier', '>= 1.3.0'
 gem 'underscore-rails', '~> 1.8.3'
 gem 'will_paginate'
 gem 'yajl-ruby', '~> 1.2.1', require: 'yajl'
+gem 'capistrano-rbenv', '~> 2.0'
+gem 'capistrano', '~> 3.8'
+gem 'capistrano-bundler', require: false
+gem 'capistrano-rvm', require: false
+gem 'capistrano-rails', require: false
+gem 'capistrano-passenger', require: false
+gem 'capistrano3-delayed-job', '~> 1.0'
 
 group :deploy do
   gem 'capistrano', '~> 3.0'
