@@ -57,6 +57,7 @@ gem 'capistrano-rvm', require: false
 gem 'capistrano-rails', require: false
 gem 'capistrano-passenger', require: false
 gem 'capistrano3-delayed-job', '~> 1.0'
+gem 'rubyzip'
 
 
 group :development, :test, :testing do

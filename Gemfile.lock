@@ -496,6 +496,7 @@ DEPENDENCIES
   rspec-activejob (~> 0.4.0)
   rspec-collection_matchers
   rspec-rails
+  rubyzip
   sass-rails
   sdoc (~> 0.4.0)
   shoulda-callback-matchers
