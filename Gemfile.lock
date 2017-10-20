@@ -443,6 +443,7 @@ DEPENDENCIES
   addressable
   ar-octopus (~> 0.8.5)
   autoprefixer-rails
+  axlsx
   axlsx_rails
   bootstrap-sass
   bootstrap-select-rails
@@ -478,6 +479,7 @@ DEPENDENCIES
   momentjs-rails (>= 2.9.0)
   mysql2
   net-ldap
+  nokogiri
   omniauth
   omniauth-shibboleth
   paper_trail (~> 4.0.0.beta)
