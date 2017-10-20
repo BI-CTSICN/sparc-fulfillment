@@ -63,7 +63,7 @@ group :development, :test, :testing do
   gem 'pry'
 end
 
-group :development do
+group :testing do
   gem 'foreman'
   gem 'rack-mini-profiler', require: false
   gem 'spring'

@@ -23,7 +23,7 @@ namespace :data do
   task revert_consolidation: :environment do
     class HistoricalProcedure < ActiveRecord::Base
       self.table_name = 'procedures'
-      octopus_establish_connection(Octopus.config[:development][:recovery])
+      octopus_establish_connection(Octopus.config[:testing][:recovery])
       allow_shard :recovery
     end
 
