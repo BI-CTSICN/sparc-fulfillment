@@ -1,4 +1,4 @@
-lock "3.4.0"
+lock "3.9.1"
 set :application, "sparc-fulfillment"
 #set :rvm_ruby_version, "ruby-2.4.2@sparc-request"
 set :rbenv_type, :user # or :system, depends on your rbenv setup
