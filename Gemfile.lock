@@ -57,13 +57,6 @@ GEM
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    axlsx (2.0.1)
-      htmlentities (~> 4.3.1)
-      nokogiri (>= 1.7.1)
-      rubyzip (~> 1.2.1)
-    axlsx_rails (0.3.0)
-      axlsx (>= 2.0.1)
-      rails (>= 3.1)
     bcrypt (3.1.10)
     bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
@@ -212,7 +205,6 @@ GEM
       haml (>= 4.0, < 6)
       nokogiri (>= 1.6.0)
       ruby_parser (~> 3.5)
-    htmlentities (4.3.3)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
@@ -443,8 +435,6 @@ DEPENDENCIES
   addressable
   ar-octopus (~> 0.8.5)
   autoprefixer-rails
-  axlsx
-  axlsx_rails
   bootstrap-sass
   bootstrap-select-rails
   bootstrap-toggle-rails
