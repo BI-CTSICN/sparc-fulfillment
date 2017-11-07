@@ -59,6 +59,13 @@ GEM
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
+    axlsx (2.0.1)
+      htmlentities (~> 4.3.1)
+      nokogiri (>= 1.4.1)
+      rubyzip (~> 1.0.0)
+    axlsx_rails (0.5.1)
+      actionpack (>= 3.1)
+      axlsx (>= 2.0.1)
     bcrypt (3.1.11)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
@@ -210,6 +217,7 @@ GEM
       haml (>= 4.0, < 6)
       nokogiri (>= 1.6.0)
       ruby_parser (~> 3.5)
+    htmlentities (4.3.4)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
@@ -358,7 +366,7 @@ GEM
     ruby-graphviz (1.2.3)
     ruby_parser (3.10.1)
       sexp_processor (~> 4.9)
-    rubyzip (1.2.1)
+    rubyzip (1.0.0)
     safe_yaml (1.0.4)
     sass (3.5.3)
       sass-listen (~> 4.0.0)
@@ -450,14 +458,14 @@ DEPENDENCIES
   addressable
   ar-octopus (~> 0.8.5)
   autoprefixer-rails
+  axlsx_rails
   bootstrap-sass
   bootstrap-select-rails
   bootstrap-toggle-rails
   bootstrap3-datetimepicker-rails (~> 4.17.37)
-  capistrano (~> 3.8)
-  capistrano-bundler
+  capistrano (~> 3.0)
   capistrano-passenger
-  capistrano-rails
+  capistrano-rails (~> 1.1)
   capistrano-rbenv (~> 2.0)
   capistrano-rvm
   capistrano3-delayed-job (~> 1.0)
@@ -484,7 +492,6 @@ DEPENDENCIES
   momentjs-rails (>= 2.9.0)
   mysql2
   net-ldap
-  nokogiri
   omniauth
   omniauth-shibboleth
   paper_trail (~> 4.0.0.beta)
@@ -501,7 +508,6 @@ DEPENDENCIES
   rspec-activejob (~> 0.4.0)
   rspec-collection_matchers
   rspec-rails
-  rubyzip
   sass-rails
   sdoc (~> 0.4.0)
   shoulda-callback-matchers
