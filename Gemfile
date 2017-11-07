@@ -7,6 +7,7 @@ gem 'acts_as_list'
 gem 'addressable'
 gem 'ar-octopus', '~> 0.8.5'
 gem 'autoprefixer-rails'
+gem 'axlsx_rails'
 gem 'bootstrap-sass'
 gem 'bootstrap-select-rails'
 gem 'bootstrap-toggle-rails'
@@ -28,7 +29,6 @@ gem 'letter_opener'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'mysql2'
 gem 'net-ldap'
-gem 'nokogiri'
 gem 'omniauth'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'paper_trail', '~> 4.0.0.beta'
@@ -49,13 +49,14 @@ gem 'underscore-rails', '~> 1.8.3'
 gem 'will_paginate'
 gem 'yajl-ruby', '~> 1.2.1', require: 'yajl'
 gem 'capistrano-rbenv', '~> 2.0'
-gem 'capistrano', '~> 3.8'
-gem 'capistrano-bundler', require: false
-gem 'capistrano-rvm', require: false
-gem 'capistrano-rails', require: false
-gem 'capistrano-passenger', require: false
-gem 'capistrano3-delayed-job', '~> 1.0'
-gem 'rubyzip'
+
+group :deploy do
+  gem 'capistrano', '~> 3.0'
+  gem 'capistrano-rvm'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-passenger'
+  gem 'capistrano3-delayed-job', '~> 1.0'
+end
 
 
 group :development, :test, :testing do
@@ -64,7 +65,7 @@ group :development, :test, :testing do
   gem 'pry'
 end
 
-group :testing do
+group :development do
   gem 'foreman'
   gem 'rack-mini-profiler', require: false
   gem 'spring'
@@ -86,3 +87,5 @@ group :test do
   gem 'webmock', '~> 1.20.4'
   gem 'vcr', '~> 2.9.3'
 end
+
+
