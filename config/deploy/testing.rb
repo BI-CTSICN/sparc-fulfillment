@@ -7,6 +7,6 @@ set :repo_url, 'git@github.com:BI-CTSICN/sparc-fulfillment.git'
 set :deploy_to, "/opt/SPARC/sparc-fulfillment-cnmc"
 set :rails_env, "testing"
 server '10.54.13.48', user: 'capistrano', roles: %w{app db web}
-set :branch, "cnmc_v2.6.0b"
+set :branch, "cnmc-v2.6.0b"
 set :passenger_restart_with_touch, true
 

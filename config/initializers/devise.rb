@@ -255,12 +255,12 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
-  if ENV.fetch('INCLUDE_SHIBBOLETH_AUTHENTICATION') == 'true'
-    config.omniauth :shibboleth, {:uid_field => 'eppn',
-                    :info_fields => {:email => 'mail', :name => 'cn', :last_name => 'sn', :first_name => 'givenName'},
-                    :extra_fields => [:schacHomeOrganization]
-    }
-  end
+  #if ENV.fetch('INCLUDE_SHIBBOLETH_AUTHENTICATION') == 'true'
+  #  config.omniauth :shibboleth, {:uid_field => 'eppn',
+  #                  :info_fields => {:email => 'mail', :name => 'cn', :last_name => 'sn', :first_name => 'givenName'},
+  #                  :extra_fields => [:schacHomeOrganization]
+  #  }
+  #end
   
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
@@ -271,11 +271,11 @@ Devise.setup do |config|
   #   manager.default_strategies(scope: :user).unshift :some_external_strategy
   # end
   
-  if ENV.fetch('INCLUDE_LDAP_AUTHENTICATION') == 'true'
-    config.warden do |manager|
-      manager.default_strategies(:scope => :identity).unshift :ldap_authenticatable
-    end
-  end
+  #if ENV.fetch('INCLUDE_LDAP_AUTHENTICATION') == 'true'
+  #  config.warden do |manager|
+  #    manager.default_strategies(:scope => :identity).unshift :ldap_authenticatable
+  #  end
+  #end
 
   # ==> Mountable engine configurations
   # When using Devise inside an engine, let's call it `MyEngine`, and this engine
