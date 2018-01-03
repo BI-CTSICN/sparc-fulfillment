@@ -30,6 +30,6 @@ class TaskMailer < ApplicationMailer
     @task = task
     env = ENV.fetch('ENVIRONMENT')
     test_email = ENV.fetch('TESTING_EMAIL')
-    mail to: env == 'testing' ? test_email : identity.email, subject: "(SPARCFulfillment) New Task Assigned"
+    mail to: env == 'production' ? test_email : identity.email, subject: "(SPARCFulfillment) New Task Assigned"
   end
 end

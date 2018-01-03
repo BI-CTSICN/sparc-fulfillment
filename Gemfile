@@ -55,7 +55,7 @@ gem 'capistrano-passenger'
 gem 'capistrano3-delayed-job', '~> 1.0'
 
 
-group :development, :test, :testing do
+group :development, :test, :production do
   gem 'factory_girl_rails', '~> 4.5.0'
   gem 'faker', '~> 1.4.3'
   gem 'pry'
